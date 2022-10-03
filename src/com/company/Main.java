@@ -2,6 +2,7 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
+        //508
         final long[][] A = {
                 {12, 500, 2, 0}, {4, 5, 6, 7, 1}, {8, 12, 65, 6}
         };
