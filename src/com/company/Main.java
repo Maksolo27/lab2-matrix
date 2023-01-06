@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.Arrays;
+
+
 public class Main {
     public static void main(String[] args) {
         //508
@@ -54,13 +57,19 @@ public class Main {
         int rows = c.length;
         int cols = c[0].length;
         long sumCol;
+        long mCols[] = new long[cols];
         for(int i = 0; i < cols; i++){
             sumCol = 0;
             for (long[] longs : c) {
                 sumCol = sumCol + longs[ i ];
             }
+            mCols[i] = sumCol;
             System.out.println("Sum of " + (i+1) +" column: " + sumCol);
         }
+        long sum = Arrays.stream(mCols).sum();
+        System.out.println(sum);
+
+        
 
     }
 }
